@@ -1,0 +1,14 @@
+#MySQL Configurations
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/employeemanager?createDatabaseIfNotExist=true
+    username: cami
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+      
