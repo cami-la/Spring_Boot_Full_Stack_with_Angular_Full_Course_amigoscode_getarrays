@@ -1,6 +1,7 @@
 package tech.getarrays.employeemanager.service;
 
 import org.springframework.stereotype.Service;
+import tech.getarrays.employeemanager.exeception.UserNotFoundException;
 import tech.getarrays.employeemanager.model.Employee;
 import tech.getarrays.employeemanager.repo.EmployeeRepo;
 
