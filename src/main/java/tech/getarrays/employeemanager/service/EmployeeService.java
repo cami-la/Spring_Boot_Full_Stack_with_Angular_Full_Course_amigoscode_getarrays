@@ -1,5 +1,6 @@
 package tech.getarrays.employeemanager.service;
 
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tech.getarrays.employeemanager.exeception.UserNotFoundException;
 import tech.getarrays.employeemanager.model.Employee;
@@ -9,8 +10,9 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-public class EmployeeService {
-  private EmployeeRepo employeeRepo;
+public record EmployeeService(
+    EmployeeRepo employeeRepo
+) {
 
   public Employee addEmployee(Employee employee) {
     employee.setEmployeeCode(UUID.randomUUID().toString());
